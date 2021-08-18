@@ -11,7 +11,6 @@
 
 body {
     font-family: Barlow;
-    text-align: center;
 }
 
 header {
@@ -94,13 +93,42 @@ header .arrow {
     font-weight: 900;
     margin: 20% 19% 0; 
     text-align: left;
+
 }
 .grid-item-1 p {
     color: gray;
     text-align: left;
-    margin: 5% 19% 0;
+    margin: 5% 19% 5%;
     font-weight: 400;
 }
+
+.grid-item-1 a {
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size:13px;
+    color: black; 
+    text-decoration: none;  
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+    margin: 20% 19%;
+    padding: 0 1%;
+    background-position: bottom center;
+    background-clip: padding-box;
+    background-size: 200px 6px;
+    background-repeat: no-repeat;
+    padding-bottom: 3px;
+    
+}
+
+#transform a {
+    background-image: linear-gradient(rgba(253, 208, 55, .5), rgba(253, 208, 55, .5));
+}
+
+#stand-out a {
+    background-image: linear-gradient(rgba(254, 110, 100, .5), rgba(254, 110, 100, .5)); 
+}
+
 .cup {
     width: 50vw;
     height: 50vh;
