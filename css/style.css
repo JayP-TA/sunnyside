@@ -81,6 +81,10 @@ header .arrow {
   margin-top: 14rem;
 }
 
+main {
+    max-width: 90em;
+    margin: 0 auto;
+}
 /* ===========
     Grid
    =========== */
