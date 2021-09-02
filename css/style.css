@@ -1,3 +1,9 @@
+:root {
+
+  --ff-primary: "Barlow", sans-serif;
+  --ff-accent: "Fraunces", serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +16,20 @@
 }
 
 body {
-  font-family: Barlow;
+  font-family: var(--ff-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h6 {
+  font-family: var(--ff-accent);
+}
+
+img {
+    max-width: 100%;
 }
 
 header {
@@ -22,7 +41,7 @@ header {
   height: 100vh;
 }
 
-header .logo{
+header .logo {
   float: left;
   margin: 30px 20px;
   height: 3%;
@@ -66,7 +85,6 @@ header button > a {
   align-items: center;
   flex-flow: center;
   color: white;
-  font-family: Fraunces;
   font-weight: 900;
   font-size: 55px;
   letter-spacing: 10px;
@@ -82,8 +100,8 @@ header .arrow {
 }
 
 main {
-    max-width: 90em;
-    margin: 0 auto;
+  margin-inline: auto;
+  width: min(100%, 90em)
 }
 /* ===========
     Grid
@@ -95,12 +113,20 @@ main {
   align-items: center;
 }
 
+@media (max-width: 60em) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .grid-item-1 {
-    margin: 10em;
+  margin: 10em;
 }
 
 .grid-item-1 h2 {
-  font-family: Fraunces;
+  font-family: var(--ff-accent);
   font-size: 35px;
   font-weight: 900;
   text-align: left;
@@ -108,9 +134,9 @@ main {
 }
 
 .grid-item-1 p {
-  color: gray;
   text-align: left;
-  font-weight: 400;
+  font-weight: 500;
+  opacity: 0.5;
   margin-bottom: 2em;
 }
 
@@ -125,7 +151,7 @@ main {
   text-align: left;
   background-position: bottom center;
   background-clip: padding-box;
-  padding: 0 .5em 0;
+  padding: 0 0.5em 0;
   background-size: 200px 6px;
   background-repeat: no-repeat;
 }
@@ -145,10 +171,10 @@ main {
 }
 
 .grid-picture {
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    margin-bottom: -3px;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: -3px;
 }
 
 #cherry {
@@ -168,7 +194,6 @@ main {
 }
 
 .grid-item-2 h3 {
-  font-family: Fraunces;
   font-weight: 700;
   font-size: 30px;
   text-align: center;
@@ -176,7 +201,6 @@ main {
 }
 
 .grid-item-2 p {
-  font-family: Barlow;
   font-weight: 600;
   line-height: 28px;
 }
@@ -192,13 +216,11 @@ p {
 .client-testimonials {
   width: 80em;
   margin-top: 8em;
-
   margin: 8em auto;
 }
 
 .client-testimonials h4 {
   text-align: center;
-  font-family: Fraunces;
   font-weight: 900;
   color: rgb(171, 171, 171);
   text-transform: uppercase;
@@ -226,8 +248,6 @@ p {
 
 .testimonial p {
   margin: 3em 0 4em;
-  line-height: 1.5em;
-  font-family: Barlow;
   font-weight: 500;
   font-size: 16px;
 }
@@ -247,63 +267,61 @@ p {
 /* =======
    Gallery
    ======= */
-   
+
 .gallery {
-    display: flex;
-    justify-content: space-evenly;
-    max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .gallery-item {
-    height: 25em;
-    width:max-content;
+  height: 25em;
+  width: max-content;
 }
 
 /* =======
    Footer
    ======= */
-   
+
 footer {
-    background-color: #90d4c5;
-    text-align: center;
-    height: 21rem;
+  background-color: #90d4c5;
+  text-align: center;
+  height: 21rem;
 }
 
 .footer-logo {
-    margin: 3em 0em 2.5em;
-    height: 2.3em;
+  margin: 3em 0em 2.5em;
+  height: 2.3em;
 }
 
 .footer-menu {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 40%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40%;
 }
 
 .footer-menu li {
-    display: inline-block;
-    color: #3c8071;
-    font-size: 20px;
-    font-weight: 400;
+  display: inline-block;
+  color: #3c8071;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .socials {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 44%;
-    margin: 6rem 0 0;
-
+  display: flex;
+  justify-content: space-between;
+  padding: 0 44%;
+  margin: 6rem 0 0;
 }
 
 .socials li {
-    list-style: none;
+  list-style: none;
 }
 
 .attribution {
-    margin-top: 2.5em;
-    opacity: .6;
+  margin-top: 2.5em;
+  opacity: 0.6;
 }
 
 .attribution a {
-    color: black;
+  color: black;
 }
