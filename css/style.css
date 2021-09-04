@@ -42,13 +42,13 @@ header {
   height: 100vh;
 }
 
-header .logo {
+.nav .logo {
   float: left;
   margin: 30px 20px;
   height: 3%;
 }
 
-header ul {
+.nav ul {
   text-align: right;
 }
 
@@ -59,12 +59,12 @@ header li {
   margin-left: 50px;
 }
 
-header > ul > li > a {
+.nav > ul > li > a {
   text-decoration: none;
   color: white;
 }
 
-header button {
+.navbar-button {
   background-color: white;
   font-family: Fraunces;
   font-weight: 700;
@@ -73,11 +73,29 @@ header button {
   width: 8em;
 }
 
-header button > a {
+.navbar-button > a {
   text-decoration: none;
   text-transform: uppercase;
   color: black;
   font-size: 14px;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 65em) {
+  .hamburger {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    display:inline-block;
+  }
+
+  .nav ul {
+    display: none;
+  }
 }
 
 .hero {
@@ -109,8 +127,8 @@ main {
    =========== */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
   align-items: center;
 }
 
@@ -123,7 +141,7 @@ main {
 }
 
 .grid-item-1 {
-  margin: 10em;
+  margin: 8em;
 }
 
 .grid-item-1 h2 {
@@ -172,10 +190,15 @@ main {
 }
 
 .grid-picture {
-  height: auto;
-  width: 100%;
   overflow: hidden;
   margin-bottom: -3px;
+  width: 100%;
+  height: auto;
+}
+
+.picture {
+  width: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 65em) {
@@ -215,6 +238,7 @@ main {
 .grid-item-2 {
   text-align: center;
   background-size: cover;
+  background-position: center;
   height: 100%;
   width: auto;
   padding: 23em 9em 5em;
@@ -289,13 +313,13 @@ p {
   text-align: center;
   width: 80%;
   line-height: 2;
-  margin-bottom: 9em;
+  margin-bottom: 4em;
   border-bottom: solid lightgrey 1px;
 }
 }
 
 .testimonial p {
-  margin: 3em 0 4em;
+  margin: 3em 0 2em;
   font-weight: 500;
   font-size: 16px;
 }
@@ -319,6 +343,8 @@ p {
 .gallery {
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
+  overflow: hidden;
 }
 
 .gallery-item {
@@ -332,7 +358,7 @@ p {
     grid-template-columns:repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     width: 100%;
-    height: auto;
+    height: fit-content
   }
 }
 

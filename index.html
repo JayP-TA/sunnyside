@@ -25,15 +25,20 @@
   <body>
     <header>
       <!--Navbar-->
-      <img src="images/logo.svg" class="logo" alt="logo" />
-      <ul class="nav">
-        <li><a href="">About</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Projects</a></li>
-        <li>
-          <button><a href="">Contact</a></button>
-        </li>
-      </ul>
+      <div class="nav">
+        <img src="images/logo.svg" class="logo" alt="logo" />
+        <button class="hamburger" id="hamburger">
+        <img src="/images/icon-hamburger.svg" alt="hamburger-icon">
+        </button>
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Projects</a></li>
+          <li>
+            <button class="navbar-button"><a href="">Contact</a></button>
+          </li>
+        </ul>
+      </div>
       <!--Hero-->
       <div>
         <h1 class="hero">We are creatives</h1>
@@ -53,10 +58,10 @@
           <a href="">Learn more</a>
         </div>
         <div class="grid-picture" id="egg-container">
-          <img src="images/desktop/image-transform.jpg" alt="egg" id="egg" />
+          <img src="images/desktop/image-transform.jpg" alt="egg" id="egg" class="picture"/>
         </div>
         <div class="grid-picture" id="cup-container">
-          <img src="images/desktop/image-stand-out.jpg" alt="cup" id="cup" />
+          <img src="images/desktop/image-stand-out.jpg" alt="cup" id="cup" class="picture"/>
         </div>
         <div class="grid-item-1" id="stand-out">
           <h2>Stand out to the right audience</h2>
