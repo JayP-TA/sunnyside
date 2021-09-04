@@ -126,7 +126,7 @@ header li {
     flex-flow: center;
     color: white;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: 10px;
     text-transform: uppercase;
     margin-top: 3.5rem;
@@ -281,7 +281,7 @@ main {
   background-position: center;
   height: 100%;
   width: auto;
-  padding: 23em 9em 5em;
+  padding: 23em 3em 5em;
 }
 
 .grid-item-2 h3 {
