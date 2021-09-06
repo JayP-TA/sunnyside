@@ -211,7 +211,7 @@ main {
   background-position: bottom center;
   background-clip: padding-box;
   padding: 0 0.5em 0;
-  background-size: 200px 6px;
+  background-size: 200px 5px;
   background-repeat: no-repeat;
 }
 
@@ -380,11 +380,15 @@ p {
    Gallery
    ======= */
 
-.gallery {
+.gallery-desktop {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   overflow: hidden;
+}
+
+.gallery-mobile {
+  display: none;
 }
 
 .gallery-item {
@@ -393,12 +397,21 @@ p {
 }
 
 @media (max-width: 65em) {
-  .gallery {
+
+  .gallery-desktop {
+    display: none;
+  }
+
+  .gallery-mobile {
     display: grid;
-    grid-template-columns:repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    width: 100%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     height: fit-content
+  }
+
+  .gallery-item {
+    height: auto;
+    width: 100%;
   }
 }
 
