@@ -85,6 +85,9 @@ header li {
   height: 50px;
   width: 8em;
 }
+.navbar-button:hover {
+  background-color: black;
+}
 
 .navbar-button > a {
   text-decoration: none;
@@ -420,7 +423,8 @@ p {
 
 .gallery-item {
   height: 25em;
-  width: max-content;
+  width: 100%;
+  flex-basis: 100%;
 }
 
 @media (max-width: 55em) {
