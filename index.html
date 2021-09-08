@@ -20,6 +20,7 @@
     />
     <!--Style sheet-->
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://kit.fontawesome.com/c5ef3f9126.js" crossorigin="anonymous"></script>
     <title>Sunnyside agency</title>
   </head>
   <body>
@@ -28,7 +29,7 @@
       <div class="nav">
         <img src="images/logo.svg" class="logo" alt="logo" />
         <button class="hamburger" id="hamburger">
-        <img src="/images/icon-hamburger.svg" alt="hamburger-icon">
+        <i class="fas fa-bars"></i>
         </button>
         <ul>
           <li><a href="">About</a></li>
@@ -58,10 +59,16 @@
           <a href="">Learn more</a>
         </div>
         <div class="grid-picture" id="egg-container">
-          <img src="images/desktop/image-transform.jpg" alt="egg" id="egg" class="picture"/>
+          <img srcset="images/mobile/image-transform.jpg 720w,
+                       images/desktop/image-transform.jpg 750w"
+               src="images/desktop/image-transform.jpg" 
+               alt="egg" id="egg" class="picture"/>
         </div>
         <div class="grid-picture" id="cup-container">
-          <img src="images/desktop/image-stand-out.jpg" alt="cup" id="cup" class="picture"/>
+          <img srcset="images/mobile/image-stand-out.jpg 720w,
+                       images/desktop/image-stand-out.jpg 750w"
+               src="images/desktop/image-stand-out.jpg" 
+               alt="egg" id="egg" class="picture"/>
         </div>
         <div class="grid-item-1" id="stand-out">
           <h2>Stand out to the right audience</h2>
