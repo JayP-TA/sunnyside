@@ -73,6 +73,7 @@ header li {
 .nav > ul > li > a {
   text-decoration: none;
   color: white;
+  transition: all .2s;
 }
 
 .navbar-button {
@@ -82,9 +83,15 @@ header li {
   border-radius: 25px;
   height: 50px;
   width: 8em;
+  transition: background-color .3s;
 }
-.navbar-button:hover {
-  background-color: black;
+.navbar-button:hover, .navbar-button:active {
+  background-color: #c8faef;
+  color: #3c8071;
+}
+
+.nav > ul > li > a:hover, .nav > ul > li > a:active {
+  color: #c8faef;
 }
 
 .navbar-button > a {
@@ -105,10 +112,6 @@ header li {
     flex-wrap: wrap;
   }
 
-  .nav-ul li {
-    margin-top: 1em;
-    margin-left: 0;
-  }
 
   .nav-ul {
     opacity: 0;
@@ -128,6 +131,19 @@ header li {
     background-color: #4bc9fc;
     padding: 1em;
     height: 14em;
+  }
+
+  .nav-ul li {
+    margin-top: 0;
+    margin-left: 0;
+    opacity: 0;
+    transition: margin-top .2s;
+    transition: opacity .2s;
+  }
+
+  .nav-ul.show li {
+    margin-top: 1em;
+    opacity: 1;
   }
 
   .hamburger {
@@ -514,6 +530,10 @@ footer {
   cursor: pointer;
 }
 
+.footer-menu li:hover, .footer-menu li:active {
+  color: #fff;
+}
+
 .socials {
   display: flex;
   justify-content: space-between;
@@ -525,6 +545,11 @@ footer {
   list-style: none;
   cursor: pointer;
 }
+
+.socials li:hover {
+  color: #fff;
+}
+
 
 .attribution {
   margin-top: 2.5em;
