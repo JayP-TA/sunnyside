@@ -287,7 +287,12 @@ main {
   padding: 0 0.5em 0;
   background-size: 200px 5px;
   background-repeat: no-repeat;
+  transition: all .3s;
 }
+
+.grid-item-1 a:hover, .grid-item-1 a:active {
+  background-size: 200px 17px;
+} 
 
 #transform a {
   background-image: linear-gradient(
@@ -545,11 +550,6 @@ footer {
   list-style: none;
   cursor: pointer;
 }
-
-.socials li:hover {
-  color: #fff;
-}
-
 
 .attribution {
   margin-top: 2.5em;
