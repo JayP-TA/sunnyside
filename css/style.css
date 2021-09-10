@@ -111,15 +111,23 @@ header li {
   }
 
   .nav-ul {
-    display: none;
+    opacity: 0;
+    justify-content: center;
     flex-direction: column;
     width: 100%;
-    justify-content: center;
+    margin: 0;
+    height: 0;
+    transition: opacity .2s;
+    transition: height .2s;
   }
 
   .nav-ul.show {
+    opacity: 1;
     display: flex;
     text-align: center;
+    background-color: #4bc9fc;
+    padding: 1em;
+    height: 14em;
   }
 
   .hamburger {
@@ -129,10 +137,21 @@ header li {
     font-size: 20px;
     display: inline-block;
     cursor: pointer;
-    margin-right: 2em;
     margin-top: 0.55em;
-    margin-right: -0.1em;
+    transition: .2s;
   }
+
+  .hamburger:not(.active):hover {
+    background-color: #4bc9fc;
+    padding: 0 .55em;
+  }
+
+  .hamburger.active {
+    background-color: #4bc9fc;
+    padding: 0 .55em;
+  }
+
+  
 }
 
 .hero {
