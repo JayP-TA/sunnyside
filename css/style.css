@@ -395,8 +395,7 @@ p {
 
 .client-testimonials {
   width: min(90%, 80em);
-  margin-top: 7em;
-  margin-inline: auto;
+  margin: 7em auto;
 }
 
 .client-testimonials h4 {
