@@ -85,12 +85,12 @@ header li {
   width: 8em;
   transition: background-color .3s;
 }
-.navbar-button:hover, .navbar-button:active {
+.navbar-button:hover, .navbar-button:active, .navbar-button:focus {
   background-color: #c8faef;
   color: #3c8071;
 }
 
-.nav > ul > li > a:hover, .nav > ul > li > a:active {
+.nav > ul > li > a:hover, .nav > ul > li > a:active, .nav > ul > li > a:focus {
   color: #c8faef;
 }
 
@@ -290,7 +290,7 @@ main {
   transition: all .3s;
 }
 
-.grid-item-1 a:hover, .grid-item-1 a:active {
+.grid-item-1 a:hover, .grid-item-1 a:active, .grid-item-1 a:focus{
   background-size: 200px 17px;
 } 
 
@@ -535,7 +535,7 @@ footer {
   cursor: pointer;
 }
 
-.footer-menu li:hover, .footer-menu li:active {
+.footer-menu li:hover, .footer-menu li:active, .footer-menu li:focus {
   color: #fff;
 }
 
