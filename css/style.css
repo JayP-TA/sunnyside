@@ -62,7 +62,7 @@ header {
   height: 3%;
 }
 
-.nav ul {
+.nav-ul {
   text-align: right;
 }
 
@@ -111,14 +111,19 @@ header li {
     border: 0;
     color: #fff;
     font-size: 20px;
-    display:inline-block;
+    display: inline-block;
+    cursor: pointer;
     margin-right: 2em;
     margin-top: .55em;
     margin-right: -.1em;
   }
 
-  .nav ul {
+  .nav-ul {
     display: none;
+  }
+
+  .nav-ul.show {
+    display: flex;
   }
 }
 
