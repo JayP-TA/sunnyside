@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](Screenshot - Sunnyside agency.png)
+![](Screenshot-SunnysideAgency.png)
 
 ### Links
 
