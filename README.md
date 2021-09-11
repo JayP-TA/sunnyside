@@ -78,11 +78,9 @@ In the future I will be revisiting this project to add more detail and refactor 
 - [Kevin Powell on YouTube](https://www.youtube.com/kepowob) - Excelent guides, explanations and general content from the CSS guru himself.
 - [CodeCademy](https://www.codecademy.com/learn/paths/front-end-engineer-career-path) - An excelent platform to learn the basics of Front End Development with amazing presentation and guidance.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
 ## Author
 
 - Website - [Juan Pablo Torres](https://github.com/JayP-TA)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/JayP-TA)
-- Twitter - [@yourusername](https://www.twitter.com/PabloSnl)
+- Frontend Mentor - [@JayP-TA](https://www.frontendmentor.io/profile/JayP-TA)
+- Twitter - [@PabloSnl](https://www.twitter.com/PabloSnl)
 
