@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/JayP-TA/sunnyside
-- Live Site URL: https://github.com/JayP-TA/sunnyside/deployments/activity_log?environment=github-pages
+- Live Site URL: https://jayp-ta.github.io/sunnyside/
 
 ### Built with
 
