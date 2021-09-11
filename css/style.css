@@ -74,6 +74,7 @@ header li {
   text-decoration: none;
   color: white;
   transition: all .2s;
+  cursor: pointer;
 }
 
 .navbar-button {
@@ -86,8 +87,8 @@ header li {
   transition: background-color .3s;
 }
 .navbar-button:hover, .navbar-button:active, .navbar-button:focus {
-  background-color: #c8faef;
-  color: #3c8071;
+  background-color: rgba(256, 256, 256, .3);
+  color: #fff;
 }
 
 .nav > ul > li > a:hover, .nav > ul > li > a:active, .nav > ul > li > a:focus {
@@ -532,6 +533,7 @@ footer {
   font-size: 20px;
   font-weight: 400;
   cursor: pointer;
+  transition: all .3s;
 }
 
 .footer-menu li:hover, .footer-menu li:active, .footer-menu li:focus {
@@ -548,6 +550,7 @@ footer {
 .socials li {
   list-style: none;
   cursor: pointer;
+  transition: all .3s;
 }
 
 .socials li:hover {
@@ -570,6 +573,7 @@ footer {
 
 .attribution a {
   color: black;
+  transition: all .3s;
 }
 
 .attribution a:hover {
