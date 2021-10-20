@@ -111,17 +111,22 @@ header li {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
   }
 
 
   .nav-ul {
+    position:absolute;
     opacity: 0;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    top: 4.28em;
+    bottom: 0;
+    left: 2em;
+    right: 2em;
+    /* width: 85%; */
     margin: 0;
     height: 0;
-    transition: opacity .2s;
     transition: height .2s;
   }
 
@@ -132,18 +137,20 @@ header li {
     background-color: #fff;
     padding: 1em;
     height: 14em;
+    transition: height .2s;
   }
 
   .nav-ul li {
+    visibility: hidden;
     margin-top: 0;
     margin-left: 0;
     opacity: 0;
-    transition: margin-top .2s;
-    transition: opacity .2s;
+    transition: margin-top .2s, opacity .6s;
     color: #000;
   }
 
   .nav-ul.show li {
+    visibility: visible;
     margin-top: 1em;
     opacity: 1;
   }
@@ -155,7 +162,7 @@ header li {
     font-size: 20px;
     display: inline-block;
     cursor: pointer;
-    margin-top: 0.55em;
+    margin-top: 0.5em;
     transition: .2s;
   }
 
@@ -169,6 +176,9 @@ header li {
     background-color: #fff;
     padding: 0 .55em;
     color: #000;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: -1px;
   }
 
   .navbar-button {
